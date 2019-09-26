@@ -1,4 +1,19 @@
-<!doctype html>
+
+
+<?php
+
+session_start();
+
+
+
+if($_SESSION['username']!='admin'){
+
+    header('location:index.php');
+}
+
+
+
+?><!doctype html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -19,7 +34,7 @@
 <p>Ce magazine s'adresse principalement aux utilisateurs de Linux , qu'ils soient particulier ou professionnels, et traite de l'utilisation du systeme, de la personnalisation
 et sa configuration ainsi nque de l'actualité du monde des logiciels libres </p>
 
-<div><a href="post.html">Billets précédents</a><a href="index.html">Accueil</a><a href="main.html">Billet suivant </a> </div>
+<div><a href="post.php">Billets précédents</a><a href="index.php">Accueil</a><a href="main.php">Billet suivant </a> </div>
 
 </body>
 </html>

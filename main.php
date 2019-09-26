@@ -1,4 +1,10 @@
 
+<?php
+
+
+session_start();
+?>
+
 <!doctype html>
 <html lang="fr">
 <head>
@@ -10,8 +16,13 @@
     <meta name="description" content="C'est un magazine spécialisé dans gnu nlinux et les logiciels libres ">
 </head>
 <body>
+
+
 <h1>Administration</h1>
-<p><a href="index.html">Terminer la session</a> </p>
+
+
+
+<p><a href="index.php">Terminer la session</a> </p>
 <h2>Gesion des articles</h2>
 <p><a href="edit.html">Créer un nouvel article</a></p>
 <table border="1">
@@ -21,7 +32,7 @@
 </tr>
     <tr>
     <td>Jour 1 : à quoi ressemblera notre site</td>
-    <td><a href="edit.html">modifier</a> - <a href="main.html">Supprimer</a></td>
+    <td><a href="edit.html">modifier</a> - <a href="main.php">Supprimer</a></td>
 </tr>
 
 </table></body>
