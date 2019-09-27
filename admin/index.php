@@ -1,17 +1,46 @@
 <?php
 
 session_start();
+if (isset($_GET['action'])=='logout') {
+
+
+  $_SESSION= array();
+    $errmessage='déconnecté';
+  header('location:index.php');
+
+} else echo 'bye;';
 
 
 
-    if(isset($_POST['username'])=='admin' && isset($_POST['password'])=='kangourou'){
 
-        $_SESSION['username']='admin';
-        header('location:../main.php');
+if (!isset($_SESSION['username'])){
 
+    $_SESSION['username']=null;
+}
+if (!isset($errmessage)){
+
+   $errmessage=null;
+}
+
+if ($_SESSION['username']=='admin'){
+
+    header('location:main.php');
+    exit;
+}
+if ($_POST){
+
+    if ($_POST['username']== 'admin' && $_POST['password']=='monpass'){
+
+
+        $_SESSION['username']=$_POST['username'];
+        header('location:main.php');
+        exit;
+    } else{
+        $errmessage= '<div style="border: 2px solid red ; background:pink;color:red padding:1em;display:inline-block">
+        Nom d\'utilisateur ou mot de passe incorrect </div>';
 
     }
-
+}
 
 
 ?>
@@ -24,8 +53,8 @@ session_start();
     <title>Projet Reilly Admonistration</title>
 </head>
 <body>
-<?= $e ?>
 <h1>Accès controllé</h1>
+<?php print $errmessage; ?>
 <p>Veuillez vous identifier ci dessous </p>
 
 <form action="#" method="post">

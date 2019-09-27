@@ -10,7 +10,7 @@
 </head>
 <body>
 
-
+        <a href="admin/index.php" title="interface authentification">Administration</a>
     <h1>Projet Reilly</h1>
     <p>Bienvenue dur le projet Reilly, un projet de blog tout en php </p>
 
