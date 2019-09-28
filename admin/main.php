@@ -5,39 +5,37 @@ $errmessage=null;
     include_once ('includes/functions.php');
 
 
-    secureAccess();
-    // variables propres à la page main
-$page['title']='Accueil';
-$page['windowTitle']="Gestion des Articles";
-
-
-
-if (isset($_GET['action'])=='delete'){
+if (isset($_GET['action'])=='delete' && isset($_GET['file'])){
 
     $fileName= 'posts/'.$_GET['file'].'.md';
-   if ( unlink($fileName)){
+    if ( unlink($fileName)){
 
-       $errmessage='<div style="background:pink">Fichier supprimé</div>';
-   }
+        $errmessage='<div style="background:pink">Fichier supprimé</div>';
+    }
+}
+    secureAccess();
+if(isset($_GET['action'])=='publish') {
+    include_once('includes/templatesFunctions.php');
+    include_once('libs/parsedown.php');
+    publish();
 
 
 }
 
 
-?>
-
-<?= printHeader($page,$errmessage); ?>
 
 
+// variables propres à la page main
 
-<?php
-
-
-
-
-
+$page['title']='Accueil';
+$page['windowTitle']="Gestion des Articles";
+printHeader($page,$errmessage);
 
 ?>
+
+
+
+
 <h2>Gesion des articles</h2>
 <p><a href="edit.php">Créer un nouvel article</a></p>
 <table border="1">

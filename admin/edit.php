@@ -25,6 +25,7 @@ if ($_POST) {
         $metaData['titre'] = $_POST['titre'];
         //on enregistre les données
         $fileContent = json_encode($metaData) . "\n";
+        $fileContent.=str_replace("\n",'', strip_tags($_POST['description']))."\n";
         $fileContent .= strip_tags($_POST['contenu']);
 
          if (file_put_contents($fileName, $fileContent)) {
@@ -45,9 +46,10 @@ if ($_POST) {
 
 $fileContent= file_get_contents('posts/'.$_GET['edition'].'.md' );
 
-$explodedContent= explode("\n",$fileContent,2);
+$explodedContent= explode("\n",$fileContent,3);
 $metaData= json_decode($explodedContent[0],true);
-$content= $explodedContent[1];
+$description=$explodedContent[1];
+$content= $explodedContent[2];
 
 
 }
@@ -58,6 +60,8 @@ $content= $explodedContent[1];
 <form action="#" method="post">
     <label for="titre" >Titre de l'article</label>
     <input type="text" name="titre" <?php if (isset($metaData['titre'])) echo 'value="'.$metaData['titre'].'"'; ?>>
+    <label for="description">EN tete</label> <br>
+    <textarea name="description" id="description" cols="50" rows="60"><?php if (isset($description)) echo $description; ?></textarea>
     <label for="contenu" >Contenu de l'article</label>
 
     <textarea id="content" rows="25" cols="60" type="text" name="contenu"><?php if (isset($content)) echo $content; ?></textarea>
