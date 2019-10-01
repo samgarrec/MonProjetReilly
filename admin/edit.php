@@ -1,8 +1,9 @@
 <?php
 
 
-include_once ('includes/functions.php');
-secureAccess();
+include_once ('modeles/blogMgr.php');
+$blogMgr= new blogMgr();
+$blogMgr->secureAccess();
 $page['title']='Creation/Edition d\'articles';
 $page['windowTitle']="Articles";
     $errmessage=null;
@@ -55,7 +56,7 @@ $content= $explodedContent[2];
 }
 
 ?>
-<?php printHeader($page); ?>
+<?php $blogMgr->printHeader($page); ?>
 <?= $errmessage ;?>
 <form action="#" method="post">
     <label for="titre" >Titre de l'article</label>
@@ -68,5 +69,6 @@ $content= $explodedContent[2];
     <iframe src="immgr.php" height="388" width="300"></iframe>
     <input type="submit" value="envoyer">
 </form>
+<a href="index.php">accueil</a>
 
-<?php printFooter();?>
+<?php $blogMgr->printFooter();?>

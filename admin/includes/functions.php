@@ -1,6 +1,11 @@
 <?php
 
 
+
+
+
+
+
 function secureAccess(){
     session_start();
     if(!checkAccess()){

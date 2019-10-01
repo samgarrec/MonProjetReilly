@@ -1,8 +1,10 @@
 
 <?php
+require ('modeles/blogMgr.php');
+
+$blogmgr=new blogMgr();
 $errmessage=null;
 
-    include_once ('includes/functions.php');
 
 
 if (isset($_GET['action'])=='delete' && isset($_GET['file'])){
@@ -13,12 +15,10 @@ if (isset($_GET['action'])=='delete' && isset($_GET['file'])){
         $errmessage='<div style="background:pink">Fichier supprimé</div>';
     }
 }
-    secureAccess();
+    $blogmgr->secureAccess();
 if(isset($_GET['action'])=='publish') {
-    include_once('includes/templatesFunctions.php');
     include_once('libs/parsedown.php');
-    publish();
-
+        $blogmgr->publish();
 
 }
 
@@ -29,7 +29,7 @@ if(isset($_GET['action'])=='publish') {
 
 $page['title']='Accueil';
 $page['windowTitle']="Gestion des Articles";
-printHeader($page,$errmessage);
+$blogmgr->printHeader($page,$errmessage);
 
 ?>
 
@@ -45,32 +45,15 @@ printHeader($page,$errmessage);
 </tr>
 
    <?php
-   $files=listPostFiles();
-   foreach ( $files as $file) {
-
-       $metaData=extractMetaDataFroPostFiles($file);
-       $shortFile= basename($file,'.md');
-
-
-       ?>
-    <tr>
-        <td><?= $metaData['titre'] ?></td>
-        <td><a href="edit.php?edition=<?= $shortFile ?>">Modifier</a>
-        -- <a href="?action=delete&file=<?= $shortFile ?>">Supprimer</a>
-        </td>
-    </tr>
-
-
-
-
-      <?php
-   }
+$blogmgr->printTableauxEdition();
 
 
 
    ?>
-</table>
+
 <a href="?action=publish">Publier</a>
+    <a href="/projetreilly/index.html">accueil</a>
 
 
-<?= printFooter() ;?>
+
+<?php $blogmgr->printFooter() ;?>

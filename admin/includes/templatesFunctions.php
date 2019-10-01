@@ -4,6 +4,8 @@
 /**
  *fonction maitresse permettant de générer les pages html des articles au format .md
  */
+
+}
 function publish()
 {
 
@@ -19,7 +21,7 @@ function publish()
 
     // pour chaque article, nous enregistrons les informations dans un tableau $post
     foreach ($postFiles as $k => $file) {
-echo 'ok';
+        echo 'ok';
         $post = array();
 
         $post['orifile'] = $file;
@@ -228,4 +230,3 @@ function tagPageDescription($item)
 {
 
     return $item['resume'];
-}
