@@ -1,10 +1,14 @@
 <?php
+use \Intervention\Image\imageManager;
+require ('../vendor/autoload.php');
 
 $page['title']='Gestionnaire d\'image';
 $page['windowTitle']='gestion des images';
 include_once ('includes/functions.php');
 include_once ('includes/imagesFunctions.php');
-$chdir='';
+include_once ('modeles/blogMgr.php');
+$blogMgr= new blogMgr()
+;$chdir='';
 secureAccess();
 $imgRoot=getFromConfig('imgdirectory').'/';
 
@@ -44,11 +48,20 @@ if(isset($_GET['action'])=='upload' && $_POST && $_FILES['imagefile']){
         $errmessage='ce n est pas reconnu comme une image';
     }else {
 
-        $i='/'.$chdir.'/';
-
-        echo $curDir.$i;
+        $i='/'.$chdir;
+        $imgr= new ImageManager();
         $name=basename($_FILES['imagefile']['name']);
         move_uploaded_file($_FILES['imagefile']['tmp_name'], $curDir.$i.$name);
+
+       if( $image = $imgr->make($curDir.$name)->resize(null, 200, function ($constraint) {
+           $constraint->aspectRatio();}))
+
+       {echo 'yeaaaah';
+           $image->save($curDir.$name, 80);
+
+
+       };
+
     }
 
 }
@@ -77,6 +90,8 @@ if(isset($_GET['action'])=='upload' && $_POST && $_FILES['imagefile']){
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <
 
 </head>
 <style>
@@ -142,8 +157,11 @@ if($imageFiles){
 
     {
         $url=substr(realpath($imageFile),strlen($_SERVER['DOCUMENT_ROOT']));
-        print '<img style="margin-left:5px;border:4px solid white;box-shadow:2px 2px 3px black;" src="'.getResized($imageFile,$thumbWidth,$thumbHeight).'" onclick="javascript:c=parent.document.getElementById(\'content\');
-c.value+=\'![texte]('.$url.')\';c.focus();">';
+       print' 
+							<img src="'.getResized($imageFile,$thumbWidth,$thumbHeight).'" style="margin-left:5px;border:4px solid white;box-shadow:2px 2px 3px black;" class="photography-entry img  d-flex justify-content-center align-items-center"
+							  onclick="javascript:c=parent.document.getElementById(\'content\');c.value+=\'![texte]('.$url.')\';c.focus()">
+							';
+
     }
 
 }

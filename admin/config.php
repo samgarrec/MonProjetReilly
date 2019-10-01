@@ -8,7 +8,7 @@ $config= array(
     'imgdirectory'=>'projetreilly/download',
     'cacheddirectory'=>'projetreilly/cache',
     'cachehashalgo'=>'adler32',
-    'thumbheight'=>80,
-    'thumbwidth'=>80,
+    'thumbheight'=>70,
+    'thumbwidth'=> 70,
     'maxuploadedfilesize'=>2000000,
 );

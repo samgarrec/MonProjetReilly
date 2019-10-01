@@ -1,4 +1,13 @@
 img {
+    display: block;
+    padding: 10px;
+    margin: auto;
+    position:relative;
+    box-shadow: 3px 2px 3px black;
 
     max-width: 100%;
+}
+body{
+    
+    text-align: center;
 }
