@@ -2,28 +2,21 @@
 
 
 function secureAccess(){
-
     session_start();
-
     if(!checkAccess()){
-
         header('location:index.php');
         exit();
-
     }
 }
 
-/**
- *
- *
- */
+// verification de la session
 function checkAccess()
 {
 
     return ($_SESSION['username']=='admin');
 
 }
-
+// affichage du footer
 
 function printFooter(){
 
@@ -36,6 +29,7 @@ function printFooter(){
 
 }
 
+// affichage du header
 
 function printHeader($page,$errmessage=null){
 
@@ -60,6 +54,8 @@ function printHeader($page,$errmessage=null){
     print $errmessage;
 }
 
+
+// retourne la liste des fichier du dossier post ayant l'extension .MD
 function listPostFiles(){
 
     return glob('posts/*.md');
@@ -67,6 +63,7 @@ function listPostFiles(){
 
 /**
  * @param $file
+ *  extrait les metadonnées de la premiere ligne d'un fichier (le titre encodé en json) et décode pour l'enregistrer sous forme de tableau
  */
 function extractMetaDataFroPostFiles($file){
     $fh= fopen($file,'r');
@@ -74,5 +71,19 @@ function extractMetaDataFroPostFiles($file){
     fclose($fh);
     return json_decode($line,true);
 
+
+}
+function getFromConfig($var)
+{
+
+
+    static $config;
+    include_once('/Applications/MAMP/htdocs/projetreilly/admin/config.php');
+    return $config[$var];
+}
+function getExtension($filename){
+
+    $pos=strrpos($filename,'.');
+    return substr($filename,$pos+1);
 
 }

@@ -65,6 +65,7 @@ $content= $explodedContent[2];
     <label for="contenu" >Contenu de l'article</label>
 
     <textarea id="content" rows="25" cols="60" type="text" name="contenu"><?php if (isset($content)) echo $content; ?></textarea>
+    <iframe src="immgr.php" height="388" width="300"></iframe>
     <input type="submit" value="envoyer">
 
 <?php printFooter();?>
