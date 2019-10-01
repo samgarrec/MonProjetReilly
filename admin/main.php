@@ -70,5 +70,7 @@ printHeader($page,$errmessage);
 
    ?>
 </table>
+<a href="?action=publish">Publier</a>
+
 
 <?= printFooter() ;?>

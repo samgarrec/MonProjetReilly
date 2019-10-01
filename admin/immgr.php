@@ -11,7 +11,7 @@ $imgRoot=getFromConfig('imgdirectory').'/';
 if (! array_key_exists('immgr',$_SESSION)) $_SESSION['immgr']=array();
 //reglage du repertoire courant
 
-
+/*
 $root='root';
 if (isset($_GET['chdir']))
 {
@@ -31,13 +31,12 @@ if (isset($_GET['chdir']))
        $curDir = $_SESSION['immgr']['currentdir'] = $_SERVER['DOCUMENT_ROOT'] . '/projetreilly/download/' . $chdir;
 
 
-   }}else{
+   }}else{ */
     $curDir= $_SESSION['immgr']['currentdir']=$_SERVER['DOCUMENT_ROOT'].'/projetreilly/download/';
-}
+
 $absoluteCurDir=realpath($_SERVER['DOCUMENT_ROOT'].'/'.$curDir) ;
 
-if(isset($_GET['action'])=='upload' && $_POST && $_FILES['imagefile']&& $_GET['dir']){
-$chdir=$_GET['dir'];
+if(isset($_GET['action'])=='upload' && $_POST && $_FILES['imagefile']){
 
     if(strpos($_FILES['imagefile']['type'],'image')!==0){
 
@@ -46,13 +45,15 @@ $chdir=$_GET['dir'];
     }else {
 
         $i='/'.$chdir.'/';
+
+        echo $curDir.$i;
         $name=basename($_FILES['imagefile']['name']);
         move_uploaded_file($_FILES['imagefile']['tmp_name'], $curDir.$i.$name);
     }
 
 }
 
-
+/*
  if (isset($_GET['action'])=='createdir' && $crdir= basename($_POST['directoryname'])){
 
 
@@ -67,6 +68,7 @@ $chdir=$_GET['dir'];
      }
 
  }
+*/
 ?>
 <!doctype html>
 <html lang="fr">
@@ -77,25 +79,27 @@ $chdir=$_GET['dir'];
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 </head>
-<body>
+<style>
+
+    img:hover{
+
+
+        transform: scale(1.2);
+        transition-duration: 0.2s;
+        cursor: pointer;
+    }
+
+</style>
+<body style="background-color: crimson;color:white;">
 
 
 
-  <h2>Emplacement actuel :</h2>
+<h2 style="text-align: center;color:white;margin-top: 10px;">Importer des images</h2>
+
+
 
 <?php
-
-echo $curDir.'<br>';
-
-
-
-//remonter d un niveau
-if ($curDir != $_SERVER['DOCUMENT_ROOT'].'/projetreilly/download/'){
-
-print '<a href="?chdir=">remonter d un niveau</a>';
-}else{
-// affichage des dossiers
-    $dirs= glob($_SERVER['DOCUMENT_ROOT'].'/projetreilly/download/*', GLOB_ONLYDIR);
+   /* $dirs= glob($_SERVER['DOCUMENT_ROOT'].'/projetreilly/download/*', GLOB_ONLYDIR);
     if($dirs){
 
         print '<ul>';
@@ -114,10 +118,10 @@ print '<a href="?chdir=">remonter d un niveau</a>';
         print '</ul>';
 
 
-    }
 
 
-}
+
+}*/
 
 $imageFiles=array();
 
@@ -138,7 +142,7 @@ if($imageFiles){
 
     {
         $url=substr(realpath($imageFile),strlen($_SERVER['DOCUMENT_ROOT']));
-        print '<img src="'.getResized($imageFile,$thumbWidth,$thumbHeight).'" onclick="javascript:c=parent.document.getElementById(\'content\');
+        print '<img style="margin-left:5px;border:4px solid white;box-shadow:2px 2px 3px black;" src="'.getResized($imageFile,$thumbWidth,$thumbHeight).'" onclick="javascript:c=parent.document.getElementById(\'content\');
 c.value+=\'![texte]('.$url.')\';c.focus();">';
     }
 
@@ -158,7 +162,7 @@ c.value+=\'![texte]('.$url.')\';c.focus();">';
 
 
   </form>
-
+<!--
 <form method="post" action="?action=creatdir">
     <fieldset><legend>Creer un dossier</legend>
     <label for="directoryname">Nom du dossier à creer :</label>
@@ -169,7 +173,7 @@ c.value+=\'![texte]('.$url.')\';c.focus();">';
 
 
 </form>
-
+ -->
 
 
 </body>
