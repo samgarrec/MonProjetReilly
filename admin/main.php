@@ -1,6 +1,6 @@
 
 <?php
-require ('modeles/blogMgr.php');
+require('modeles/BlogMgr.php');
 
 $blogmgr=new blogMgr();
 $errmessage=null;
@@ -27,7 +27,7 @@ if(isset($_GET['action'])=='publish') {
 
 // variables propres à la page main
 
-$page['title']='Accueil';
+$page['title']='';
 $page['windowTitle']="Gestion des Articles";
 $blogmgr->printHeader($page,$errmessage);
 
@@ -36,14 +36,6 @@ $blogmgr->printHeader($page,$errmessage);
 
 
 
-<h2>Gesion des articles</h2>
-<p><a href="edit.php">Créer un nouvel article</a></p>
-<table border="1">
-<tr>
-    <th>Titre</th>
-    <th>Action</th>
-</tr>
-
    <?php
 $blogmgr->printTableauxEdition();
 
@@ -51,9 +43,8 @@ $blogmgr->printTableauxEdition();
 
    ?>
 
-<a href="?action=publish">Publier</a>
-    <a href="/projetreilly/index.html">accueil</a>
 
 
+</div>
 
 <?php $blogmgr->printFooter() ;?>

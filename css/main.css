@@ -7,7 +7,44 @@ img {
 
     max-width: 100%;
 }
+.mainLinkEdit{
+    
+    
+    display: inline-block;
+    margin-left: 20px;
+    
+}
+.mainLinkEdit:last-child:after{
+    
+    content: "";
+}
+.mainLinkEdit:after{
+    margin-left:20px;
+    content: "|";
+}
+.btnDeconnexion{
+    
+    
+    position: absolute;
+top: -120px;
+left: 90%;
+z-index: 99999;
+    color: white;
+}
 body{
     
     text-align: center;
+}
+
+
+.topSite{
+    
+    
+    margin-top:10%;
+}
+table{
+    
+    margin-left: auto;
+margin-right: auto;
+
 }

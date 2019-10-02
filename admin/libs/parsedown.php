@@ -1,71 +1,4 @@
 
-
-Skip to content
-
-    Why GitHub?
-
-
-
-
-    Enterprise
-    Explore
-
-
-
-Marketplace
-Pricing
-
-
-
-
-
-Sign in
-Sign up
-
-213
-11,780
-
-    901
-
-erusev/parsedown
-Code
-Issues 37
-Pull requests 32
-Projects 1
-Wiki
-Security
-Insights
-Join GitHub today
-
-GitHub is home to over 40 million developers working together to host and review code, manage projects, and build software together.
-parsedown/Parsedown.php
-@aidantwoods aidantwoods Merge branch '1.8.x-beta' 3825db5 on 6 Apr
-@erusev
-@aidantwoods
-@PhrozenByte
-@hkdobrev
-@rhukster
-@naNuke
-@wkpark
-@KaneCohen
-@NathanBaulch
-@luizbills
-@scarwu
-@itshoro
-@tillkruss
-@pablotheissen
-@paukenba
-@kelunik
-@malorisdead
-@apfelbox
-@josephok
-@jstanden
-@pjona
-@gene-sis
-@garoevans
-@donatj
-@calumks
-1995 lines (1580 sloc) 50.8 KB
 <?php
 #
 #
@@ -1647,17 +1580,3 @@ class Parsedown
     );
 }
 ?>
-    © 2019 GitHub, Inc.
-Terms
-    Privacy
-    Security
-    Status
-    Help
-
-    Contact GitHub
-    Pricing
-    API
-    Training
-    Blog
-    About
-

@@ -1,8 +1,8 @@
 <?php
 
 
-include_once ('modeles/blogMgr.php');
-$blogMgr= new blogMgr();
+include_once('modeles/BlogMgr.php');
+$blogMgr= new BlogMgr();
 $blogMgr->secureAccess();
 $page['title']='Creation/Edition d\'articles';
 $page['windowTitle']="Articles";

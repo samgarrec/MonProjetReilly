@@ -50,7 +50,7 @@ if ($_POST){
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Projet Reilly Admonistration</title>
+    <title>Projet Reilly Administration</title>
 </head>
 <body>
 <h1>Accès controllé</h1>
