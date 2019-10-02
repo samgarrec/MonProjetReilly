@@ -250,7 +250,7 @@ class BlogMgr
         //generation de la page d'accueil
         $index['template'] = './templates/index.html';
         $index['items'] = $posts;
-        $index['title'] = 'Accueil';
+        $index['title'] = 'Liste d\'actualités';
         // enregistrement de la page d'accueil dans new site, zt parssage de page.HTML AVEC LESinfos de la page d'accueil
         file_put_contents('./newSite/index.html', $this->parseTemplate($index, './templates/page.html'));
 //selection des fichiers deja publié
