@@ -1,102 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b397ccaf-cb2b-4af1-ac80-d10b5f586223" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/dropdown/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/dropdown/js/script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/mobirise/css/mbr-additional.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/popper/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/smooth-scroll/smooth-scroll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/socicon/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/theme/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/theme/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/touch-swipe/jquery.touch-swipe.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/web/assets/jquery/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/web/assets/mobirise-icons/mobirise-icons.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/api.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/bootstrap.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/immgr.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/immgr.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/imagesFunctions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/templatesFunctions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/libs/parsedown.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/libs/parsedown.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/modeles/blogMgr.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/modeles/BlogMgr.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/oldSite/cd.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/oldSite/dcs-vc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/oldSite/dscsq.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/oldSite/dzfcssz.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/oldSite/fgb.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/oldSite/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/oldSite/nouvel-article.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/oldSite/quentin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/oldSite/super-titre.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/oldSite/tamaman.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/oldSite/titre-de-l-article.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/posts/cd.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/posts/dcs-vc.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/posts/dscsq.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/posts/dzfcssz.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/posts/fgb.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/posts/nouvel-article.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/posts/quentin.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/posts/super-titre.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/posts/tamaman.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/posts/titre-de-l-article.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/templates/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/templates/page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/0ebf1888-180x180.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/11b218ba-180x180.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/11b218ba-70x70.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/2974190a-70x70.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/2a791469-180x180.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/2ae5147f-180x180.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/5559154d-180x180.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/5559154d-80x80.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/559e1557-180x180.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/6a761598-180x180.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/6a761598-80x80.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/6b8315b8-180x180.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/6e291b1d-180x180.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/6e291b1d-70x70.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/6e291b1d-80x80.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/804715f9-180x180.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/81351615-180x180.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/81351615-80x80.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/820e162a-180x180.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/9859168b-180x180.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/9859168b-80x80.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/aec616df-180x180.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/aec616df-70x70.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/aec616df-80x80.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/b01c170c-180x180.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/c8091944-180x180.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/c81f177c-180x180.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/c81f177c-80x80.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cache/c86f1786-180x180.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cd.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dcs-vc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/download/Screenshot_20190923-185144.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/download/caravane.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/download/grafikartlogo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/download/presentation.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dscsq.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dzfcssz.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgb.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nouvel-article.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quentin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/super-titre.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tamaman.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/titre-de-l-article.html" beforeDir="false" />
-    </list>
+    <list default="true" id="b397ccaf-cb2b-4af1-ac80-d10b5f586223" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -360,12 +265,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569511254601</updated>
-      <workItem from="1569511255743" duration="97000000" />
+      <workItem from="1569511255743" duration="97036000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97000000" />
+    <option name="totallyTimeSpent" value="97036000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
