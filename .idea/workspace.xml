@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b397ccaf-cb2b-4af1-ac80-d10b5f586223" name="Default Changelist" comment="" />
+    <list default="true" id="b397ccaf-cb2b-4af1-ac80-d10b5f586223" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dzcscx/dec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +49,15 @@
                 <element signature="e#4474#4479#0" expanded="true" />
                 <element signature="e#4603#4608#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dzcscx/dec">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -110,7 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/main.php" />
         <option value="$PROJECT_DIR$/admin/footer.php" />
         <option value="$PROJECT_DIR$/admin/includes/secureaccess.php" />
         <option value="$PROJECT_DIR$/admin/includes/footer.php" />
@@ -160,6 +172,7 @@
         <option value="$PROJECT_DIR$/mon-premier-article.html" />
         <option value="$PROJECT_DIR$/admin/main.php" />
         <option value="$PROJECT_DIR$/admin/modeles/BlogMgr.php" />
+        <option value="$PROJECT_DIR$/dzcscx/dec" />
         <option value="$PROJECT_DIR$/admin/templates/page.html" />
       </list>
     </option>
@@ -168,6 +181,7 @@
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -214,6 +228,11 @@
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="socicon" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projetreilly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projetreilly" type="462c0819:PsiDirectoryNode" />
+              <item name="dzcscx" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -265,12 +284,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569511254601</updated>
-      <workItem from="1569511255743" duration="97036000" />
+      <workItem from="1569511255743" duration="97132000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97036000" />
+    <option name="totallyTimeSpent" value="97132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -322,11 +341,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nouvel-article.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -659,6 +673,13 @@
             <element signature="n#style#0;n#h2#0;n#article#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dzcscx/dec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
