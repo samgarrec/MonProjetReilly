@@ -1,0 +1,3 @@
+{"titre":"bkjkb"}
+bkjkjbk
+jkbbbDepuis 2003, les recettes des radars ont régulièrement progressé mais la tendance s'inverse. En 2016, le produit des amendes liées aux infractions de la route s’est élevé à 1,8 milliard d’euros, dont 920 millions d’amendes des radars automatiques. En 2017, le montant a atteint 824,7 millions d'euros, rappellent Les Échos « mais la tendance à la hausse avait été brisée en 2018, avec une première chute à 682,7 millions ». « Il y a un vrai décrochage », leur confie une source gouvernemental![texte](/projetreilly/download/boris.jpg)![texte](/projetreilly/download/logo.jpg)

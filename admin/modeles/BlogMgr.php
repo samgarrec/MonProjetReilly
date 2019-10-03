@@ -27,20 +27,22 @@ class BlogMgr
     function printFooter()
     {
 
-        print '</article>';
+        print '</article> <br><a href="../admin/main.php">Administration</a>';
 
         print
 
-            "<hr>
-<script src=\"../assets/web/assets/jquery/jquery.min.js\"></script>
-<script src=\"../assets/popper/popper.min.js\"></script>
-<script src=\"../assets/bootstrap/js/bootstrap.min.js\"></script>
-<script src=\"../assets/smooth-scroll/smooth-scroll.js\"></script>
-<script src=\"../assets/dropdown/js/script.min.js\"></script>
-<script src=\"../assets/touch-swipe/jquery.touch-swipe.min.js\"></script>
-<script src=\"../assets/theme/js/script.js\"></script>
+            '<hr>
+<script src="../asset/web/assets/jquery/jquery.min.js"></script>
+<script src="../asset/popper/popper.min.js"></script>
+<script src="../asset/bootstrap/js/bootstrap.min.js"></script>
+<script src="../asset/smooth-scroll/smooth-scroll.js"></script>
+<script src="../asset/dropdown/js/script.min.js"></script>
+<script src="../asset/touch-swipe/jquery.touch-swipe.min.js"></script>
+<script src="../asset/theme/js/script.js"></script>
+<script type="../text/javascript" src="js/3deye.min.js"></script><br>
+
 </body>
-</html>";
+</html>';
 
     }
 
@@ -60,14 +62,14 @@ class BlogMgr
         <link rel="stylesheet" href="../css/main.css">
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
-    <link rel="stylesheet" href="../assets/web/assets/mobirise-icons/mobirise-icons.css">
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="../assets/dropdown/css/style.css">
-    <link rel="stylesheet" href="../assets/socicon/css/styles.css">
-    <link rel="stylesheet" href="../assets/theme/css/style.css">
-    <link rel="stylesheet" href="../assets/mobirise/css/mbr-additional.css" type="text/css">
+    <link rel="stylesheet" href="../asset/web/asset/mobirise-icons/mobirise-icons.css">
+    <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../asset/dropdown/css/style.css">
+    <link rel="stylesheet" href="../asset/socicon/css/styles.css">
+    <link rel="stylesheet" href="../asset/theme/css/style.css">
+    <link rel="stylesheet" href="../asset/mobirise/css/mbr-additional.css" type="text/css">
     <title>Administration -';
         print $page['windowTitle'];
 
@@ -76,59 +78,59 @@ class BlogMgr
 <body>
 <section class="menu popup-btn-cards cid-qyXn6aM2G0" once="menu" id="menu2-4k" data-rv-view="3237">
 
-    
-    
+
+
 
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
         <div class="mbr-overlay" style="opacity: 0.9;"></div>
 
-      <a class="full-link" href="http://www.mobirise.com"></a>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            
-        <div class="left-menu">
-          <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
-                  <a class="nav-link link text-black display-4" href="../index.html">
-                      Home</a>
-              </li>
-              <li class="nav-item dropdown open">
-                  <a class="nav-link link dropdown-toggle text-black display-4" href="https://mobirise.com" data-toggle="dropdown-submenu" aria-expanded="true">
-                       Pages</a><div class="dropdown-menu"><a class="dropdown-item text-black display-4" href="page1.html">Page 1</a><a class="dropdown-item text-black display-4" href="page2.html">Page 2</a><a class="dropdown-item text-black display-4" href="page3.html">Page 3</a></div>
-              </li></ul>
-        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <div class="brand-container">
-          <div class="navbar-brand">
+            <div class="left-menu">
+                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
+                    <a class="nav-link link text-black display-4" href="index.html">
+                        Home</a>
+                </li>
+                    <li class="nav-item dropdown open">
+                        <a class="nav-link link dropdown-toggle text-black display-4" href="https://mobirise.com" data-toggle="dropdown-submenu" aria-expanded="true">
+                            Pages</a><div class="dropdown-menu"><a class="dropdown-item text-black display-4" href="page1.html">Page 1</a><a class="dropdown-item text-black display-4" href="page2.html">Page 2</a><a class="dropdown-item text-black display-4" href="page3.html">Page 3</a></div>
+                    </li></ul>
+            </div>
+
+            <div class="brand-container">
+                <div class="navbar-brand">
               <span class="navbar-logo">
-                  <a href="#">
-                      <img src="../download/logo.jpg" alt="Mobirise" media-simple="true" style="height: 3.8rem;">
-                  </a>
+
+                      <img src="download/lemonde.png"  media-simple="true" style="height: 100px;">
+
               </span>
-           
-          </div>
+
+                </div>
+            </div>
+
+            <div class="right-menu">
+                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
+                    <a class="nav-link link text-black display-4" href="index.html#video1-9o">
+                        Watch Video</a>
+                </li>
+                    <li class="nav-item dropdown open">
+                        <a class="nav-link link dropdown-toggle text-black display-4" href="https://mobirise.com" data-toggle="dropdown-submenu" aria-expanded="true">
+                            Blocks</a><div class="dropdown-menu"><a class="dropdown-item text-black display-4" href="menu.html">Menu</a><a class="dropdown-item text-black display-4" href="tables.html" aria-expanded="false">Tables</a><a class="dropdown-item text-black display-4" href="teams.html" aria-expanded="false">Teams</a><a class="dropdown-item text-black display-4" href="footers.html" aria-expanded="false">Footers</a></div>
+                    </li></ul>
+            </div>
         </div>
 
-        <div class="right-menu">
-          <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
-                <a class="nav-link link text-black display-4" href="index.html#video1-9o">
-                    Watch Video</a>
-            </li>
-            <li class="nav-item dropdown open">
-                <a class="nav-link link dropdown-toggle text-black display-4" href="https://mobirise.com" data-toggle="dropdown-submenu" aria-expanded="true">
-                    Blocks</a><div class="dropdown-menu"><a class="dropdown-item text-black display-4" href="menu.html">Menu</a><a class="dropdown-item text-black display-4" href="headers.html">Headers</a><a class="dropdown-item text-black display-4" href="sliders-galleries.html">Sliders &amp; Galleries</a><a class="dropdown-item text-black display-4" href="features.html">Features</a><a class="dropdown-item text-black display-4" href="shops.html">Shops</a><a class="dropdown-item text-black display-4" href="content.html">Content</a><a class="dropdown-item text-black display-4" href="info.html">Info</a><a class="dropdown-item text-black display-4" href="pricings.html">Pricings</a><a class="dropdown-item text-black display-4" href="testimonials.html">Testimonials</a><a class="dropdown-item text-black display-4" href="forms-timelines.html">Forms &amp; Timelines</a><a class="dropdown-item text-black display-4" href="accordions-toggles.html" aria-expanded="false">Accordions &amp; Toggles</a><a class="dropdown-item text-black display-4" href="tables.html" aria-expanded="false">Tables</a><a class="dropdown-item text-black display-4" href="teams.html" aria-expanded="false">Teams</a><a class="dropdown-item text-black display-4" href="footers.html" aria-expanded="false">Footers</a></div>
-            </li></ul>
-        </div>
-      </div>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <div class="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-          </button>
+        </button>
     </nav>
+
 </section>
 <article class="topSite">
 
@@ -394,7 +396,7 @@ class BlogMgr
 
     function tagHome()
     {
-        return '<a href="../../index.html">Accueil</a>';
+        return '<a href="index.html">Accueil</a>';
     }
 
     function tagPageDescription($item)

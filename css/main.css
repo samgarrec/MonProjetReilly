@@ -1,3 +1,57 @@
+
+.cid-qyXn6aM2G0 .navbar.navbar-short .navbar-logo img {
+ 
+    height: 6rem !important;
+}
+   .cid-qyXn6aM2G0 .nav-item .nav-link::before {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 1px;
+        bottom: -0.5rem;
+        left: 50%;
+        background: linear-gradient(90deg, #1b1b1c, #fe525b);
+        transition: width 90ms linear, left 200ms linear;
+    }
+.carteArticle{
+    
+    margin-top: 200px;
+    height: 300px;
+    display: inline-block;
+    border-right: 1px solid;
+    
+    overflow: scroll;
+}
+#vue{
+    
+    max-width: 1000px;
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cid-qyXn6aM2G0 .navbar.navbar-short{
+    
+    height: 120px!important;;
+}
+#navbarSupportedContent{
+    
+    
+    border-bottom: 1px solid black;
+    
+    
+    
+}
+.navbar-logo img{
+    
+
+
+
+height: auto;
+
+box-shadow: none;
+
+margin-top: -0px;
+}
 .container-article{
     
     

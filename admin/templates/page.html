@@ -8,18 +8,19 @@
     <meta name="description" content="{pageDescription}">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
-    <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="assets/dropdown/css/style.css">
-    <link rel="stylesheet" href="assets/socicon/css/styles.css">
-    <link rel="stylesheet" href="assets/theme/css/style.css">
-    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+    <link rel="stylesheet" href="asset/web/assets/mobirise-icons/mobirise-icons.css">
+    <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="asset/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="asset/dropdown/css/style.css">
+    <link rel="stylesheet" href="asset/socicon/css/styles.css">
+    <link rel="stylesheet" href="asset/theme/css/style.css">
+    <link rel="stylesheet" href="asset/mobirise/css/mbr-additional.css" type="text/css">
 
     <title>{siteTitle}</title>
 </head>
 <body>
+<div class="container-fluid">
 <section class="menu popup-btn-cards cid-qyXn6aM2G0" once="menu" id="menu2-4k" data-rv-view="3237">
 
 
@@ -46,7 +47,7 @@
                 <div class="navbar-brand">
               <span class="navbar-logo">
 
-                      <img src="../download/logo.png"  media-simple="true" style="height: 3.8rem;">
+                      <img src="download/lemonde.png"  media-simple="true" style="height: 100px;">
 
               </span>
 
@@ -60,7 +61,7 @@
                 </li>
                     <li class="nav-item dropdown open">
                         <a class="nav-link link dropdown-toggle text-black display-4" href="https://mobirise.com" data-toggle="dropdown-submenu" aria-expanded="true">
-                            Blocks</a><div class="dropdown-menu"><a class="dropdown-item text-black display-4" href="menu.html">Menu</a><a class="dropdown-item text-black display-4" href="headers.html">Headers</a><a class="dropdown-item text-black display-4" href="sliders-galleries.html">Sliders &amp; Galleries</a><a class="dropdown-item text-black display-4" href="features.html">Features</a><a class="dropdown-item text-black display-4" href="shops.html">Shops</a><a class="dropdown-item text-black display-4" href="content.html">Content</a><a class="dropdown-item text-black display-4" href="info.html">Info</a><a class="dropdown-item text-black display-4" href="pricings.html">Pricings</a><a class="dropdown-item text-black display-4" href="testimonials.html">Testimonials</a><a class="dropdown-item text-black display-4" href="forms-timelines.html">Forms &amp; Timelines</a><a class="dropdown-item text-black display-4" href="accordions-toggles.html" aria-expanded="false">Accordions &amp; Toggles</a><a class="dropdown-item text-black display-4" href="tables.html" aria-expanded="false">Tables</a><a class="dropdown-item text-black display-4" href="teams.html" aria-expanded="false">Teams</a><a class="dropdown-item text-black display-4" href="footers.html" aria-expanded="false">Footers</a></div>
+                            Blocks</a><div class="dropdown-menu"><a class="dropdown-item text-black display-4" href="menu.html">Menu</a><a class="dropdown-item text-black display-4" href="tables.html" aria-expanded="false">Tables</a><a class="dropdown-item text-black display-4" href="teams.html" aria-expanded="false">Teams</a><a class="dropdown-item text-black display-4" href="footers.html" aria-expanded="false">Footers</a></div>
                     </li></ul>
             </div>
         </div>
@@ -74,14 +75,55 @@
             </div>
         </button>
     </nav>
+
 </section>
+<div class="row">
 {content}
-<script src="assets/web/assets/jquery/jquery.min.js"></script>
-<script src="assets/popper/popper.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/smooth-scroll/smooth-scroll.js"></script>
-<script src="assets/dropdown/js/script.min.js"></script>
-<script src="assets/touch-swipe/jquery.touch-swipe.min.js"></script>
-<script src="assets/theme/js/script.js"></script>
+</div>
+
+<aside>
+   <!-- <div class="threesixty" data-path="assets/img/src/{index}.jpg" data-count="41"></div> -->
+</aside>
+</div>
+<script src="asset/web/assets/jquery/jquery.min.js"></script>
+<script src="asset/popper/popper.min.js"></script>
+<script src="asset/bootstrap/js/bootstrap.min.js"></script>
+<script src="asset/smooth-scroll/smooth-scroll.js"></script>
+<script src="asset/dropdown/js/script.min.js"></script>
+<script src="asset/touch-swipe/jquery.touch-swipe.min.js"></script>
+<script src="asset/theme/js/script.js"></script>
+<script type="text/javascript" src="js/3deye.min.js"></script><br>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script src="assets/js/jquery.threesixty.js"></script>
+<script>
+    $(document).ready(function(){
+
+        var $threeSixty = $('.threesixty');
+
+        $threeSixty.threeSixty({
+            dragDirection: 'horizontal',
+            useKeys: true,
+            draggable: true
+        });
+
+        $('.next').click(function(){
+            $threeSixty.nextFrame();
+        });
+
+        $('.prev').click(function(){
+            $threeSixty.prevFrame();
+        });
+
+        $threeSixty.on('down', function(){
+            $('.ui, h1, h2, .label, .examples').stop().animate({opacity:0}, 300);
+        });
+
+        $threeSixty.on('up', function(){
+            $('.ui, h1, h2, .label, .examples').stop().animate({opacity:1}, 500);
+        });
+    });
+</script>
 </body>
 </html>
