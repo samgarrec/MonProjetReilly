@@ -1,4 +1,34 @@
+#encart-meteo h2{
+    
+    
+    font-size: 1em;
+}
+.contenu{
+    
+    margin-top: 200px;
+}
+#encart-meteo ul{
+    
 
+ 
+}
+#encart-meteo{
+    text-align: center;
+    border:1px solid #171717;
+    /*! width: 20%; */
+    position: absolute;
+    z-index: 9999;
+    background-color: #7bbf7b;
+        
+    
+    color: white;
+    top: 0;
+    height: 250px;
+    font-size: 0.8em;
+    left: 5%;
+    padding: 1%;
+    box-shadow: 1px 2px 2px black;
+}
 .cid-qyXn6aM2G0 .navbar.navbar-short .navbar-logo img {
  
     height: 6rem !important;
@@ -15,12 +45,14 @@
     }
 .carteArticle{
     
-    margin-top: 200px;
+    margin-top: 20px;
     height: 300px;
     display: inline-block;
-    border-right: 1px solid;
+    /*! border-right: 1px solid; */
     
     overflow: scroll;
+    box-shadow: 1px 1px 1px;
+    line-height: 18px;
 }
 #vue{
     
@@ -72,6 +104,7 @@ img {
     max-height: 340px;
     clear: both;
     float: ;
+    background-color: #5f67a0;
 }
 .listeresume{
     

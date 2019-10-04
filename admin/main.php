@@ -30,7 +30,6 @@ if(isset($_GET['action'])=='publish') {
 $page['title']='';
 $page['windowTitle']="Gestion des Articles";
 $blogmgr->printHeader($page,$errmessage);
-
 ?>
 
 

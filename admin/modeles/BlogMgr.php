@@ -48,6 +48,10 @@ class BlogMgr
 
 // affichage du header
 
+    /**
+     * @param $page
+     * @param null $errmessage
+     */
     function printHeader($page, $errmessage = null)
     {
 
@@ -76,9 +80,14 @@ class BlogMgr
         print '</title>
 </head>
 <body>
-<section class="menu popup-btn-cards cid-qyXn6aM2G0" once="menu" id="menu2-4k" data-rv-view="3237">
+<section class="menu popup-btn-cards cid-qyXn6aM2G0" once="menu" id="menu2-4k" data-rv-view="3237">';
+if (isset($_GET['ville'])){
+    $this->getMeteo($_GET['ville']);
 
+}else{
+        $this->getMeteo('Montpellier');}
 
+print' 
 
 
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
@@ -410,7 +419,7 @@ class BlogMgr
     {
         $files = $this->listPostFiles();
 
-      print'  <div class="row">
+        print'  <div class="row">
 <div class="col-12">
 <h2>Gesion des articles</h2>
 </div>
@@ -544,6 +553,18 @@ class BlogMgr
 
 
     }
+
+
+    function getMeteo($ville)
+    {
+        $json_data = file_get_contents('http://api.openweathermap.org/data/2.5/weather?q=' . $ville . ',fr&units=metric&lang=fr&APPID=d3bdbc3467f0307e6bb81f3021fd10f1');
+        $datas = json_decode($json_data, true);
+var_dump($datas);
+        include_once('meteo.php');
+
+    }
+
 }
 
 ?>
+
